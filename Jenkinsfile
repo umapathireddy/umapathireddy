@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'maven:3.39-jdk-8'
+      args 'C:\\Users\\kumar\\.m2'
+    }
+
+  }
   stages {
     stage('init') {
       steps {
