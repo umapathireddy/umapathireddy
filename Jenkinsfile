@@ -1,4 +1,4 @@
-pipeline {
+hello my statut pipeline {
   agent any
   stages {
     stage('instlall') {
